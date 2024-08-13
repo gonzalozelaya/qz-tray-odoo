@@ -1,5 +1,4 @@
 odoo.define('qz-tray-odoo.qz_integration', function (require) {
-    "use strict";
 
     var AbstractAction = require('web.AbstractAction');
     var core = require('web.core');
