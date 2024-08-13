@@ -16,7 +16,7 @@ odoo.define('qz-tray-odoo.javascript',[], function (require) {
                           qz.websocket.connect().then(() => {
                                 var printer_name_field = $('#printerName').val();
                                 console.log('Printer name',printer_name_field);
-                                return qz.printers.find("ZDesigner");
+                                return qz.printers.find(printer_name_field);
                           }).then((found) => {
                                  console.log(found);
                                  var num_copies_field = parseInt($('#copiesNumber').val());
