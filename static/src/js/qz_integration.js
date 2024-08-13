@@ -1,7 +1,7 @@
-odoo.define('qz-tray-odoo.qz_integration',['web.AbstractAction','web.core'], function (require) {
+odoo.define('qz-tray-odoo.qz_integration',['@web/client_actions/action_service','@web/core/registry'], function (require) {
     'use strict';
-    var AbstractAction = require('web.AbstractAction');
-    var core = require('web.core');
+    var AbstractAction = require('@web/client_actions/action_service');
+    var core = require('@web/core/registry');
 
     var PrintLabelAction = AbstractAction.extend({
         start: function () {
@@ -37,5 +37,5 @@ odoo.define('qz-tray-odoo.qz_integration',['web.AbstractAction','web.core'], fun
         }
     });
 
-    core.action_registry.add('print.label.qz', PrintLabelAction);
+    registry.category('actions').add('print.label.qz', PrintLabelAction);
 });

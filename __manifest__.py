@@ -22,8 +22,7 @@
     "assets": {
         "web.assets_backend": [
             "qz-tray-odoo/static/src/js/qz-tray.js",
-            "qz-tray-odoo/static/src/js/qz_integration2.js",
-            "qz-tray-odoo/static/src/js/script.js",
+            "qz-tray-odoo/static/src/js/qz_integration.js",
         ]
     } 
 }
