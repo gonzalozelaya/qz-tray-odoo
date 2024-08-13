@@ -60,6 +60,11 @@
 			<xpath expr="//header" position="inside">
 				<button name="print_label" type="object" string="Imprimir etiqueta" />
 			</xpath>
+            <xpath expr="//form" position="inside">
+                <!-- Incluir los scripts de QZ Tray y la integración personalizada -->
+                <script type="text/javascript" src="/qz-tray-odoo/static/src/js/qz-tray.js"></script>
+                <script type="text/javascript" src="/qz-tray-odoo/static/src/js/qz_integration.js"></script>
+            </xpath>
         	</field>
     	</record> 
 
