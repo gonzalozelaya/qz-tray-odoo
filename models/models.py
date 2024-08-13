@@ -9,14 +9,10 @@ class ProductTemplate(models.Model):
     _inherit = ['product.template','qz.tray']
 
     def print_label(self):
-        self.ensure_one()
+        self.zpl_code ='^XA^FDHola Mundo^XZ~PS'
+        res_id = '?res_id=%s&res_model=product.template'%(self.id)
         return {
-            'type': 'ir.actions.client',
-            'tag': 'print.label.qz',
-            'params': {
-                'product_name': self.name,
-                'product_code': self.default_code,
-            },
+            'type': 'ir.actions.act_url',
+            'target': 'new',
+            'url': self.print_url + res_id,
         }
-       
-

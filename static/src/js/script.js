@@ -1,4 +1,4 @@
-odoo.define('qz-tray-odoo.javascript', function (require) {
+odoo.define('qz-tray-odoo.javascript',[], function (require) {
         'use strict';
 
         $().ready(function () {

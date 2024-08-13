@@ -37,5 +37,5 @@ odoo.define('qz-tray-odoo.qz_integration',['@web/client_actions/action_service',
         }
     });
 
-    registry.category('actions').add('print.label.qz', PrintLabelAction);
+    core.category('actions').add('print.label.qz', PrintLabelAction);
 });
