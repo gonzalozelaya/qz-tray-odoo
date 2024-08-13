@@ -20,7 +20,7 @@
     ],
     'license': 'LGPL-3',
     "assets": {
-        "web.assets_frontend": [
+        "web.assets_backend": [
             "qz-tray-odoo/static/src/js/qz-tray.js",
             "qz-tray-odoo/static/src/js/qz_integration.js",
             "qz-tray-odoo/static/src/js/script.js",
