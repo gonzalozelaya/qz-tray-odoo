@@ -15,7 +15,7 @@ class ZplReport(models.Model):
 
     name = fields.Char("Reporte ZPL",required=True)
     code = fields.Char('Codigo')
-    zpl = fields.Text('ZPL')
+    zpl_code = fields.Text('ZPL')
     copies = fields.Integer('Copias',default=1)
     model_id = fields.Many2one('ir.model','Modelo')
     line_ids = fields.One2many(comodel_name='zpl.report.line',inverse_name='zpl_report_id')
