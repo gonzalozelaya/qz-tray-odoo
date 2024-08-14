@@ -52,13 +52,22 @@
 		action="action_zpl_report"
 		sequence="45"/>
 
+ 	 <record id="action_qz_print_wizard" model="ir.actions.act_window">
+        <field name="name">QZ Print Label</field>
+        <field name="res_model">qz.print.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <!--<field name="context">{'default_zpl_code': object.your_field_with_zpl_code}</field>-->
+    </record>
+    
  	<record model="ir.ui.view" id="view_zpl_product_template">  
         	<field name="name">view.zpl.product.template</field>  
 		<field name="model">product.template</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"></field>
 		<field name="arch" type="xml">
 			<xpath expr="//header" position="inside">
-				<button name="print_label" type="object" string="Imprimir etiqueta" />
+                <button name="%(action_qz_print_template)d" type="action" string="Print Label" class="oe_highlight"/>
+				<!--<button name="print_label" type="object" string="Imprimir etiqueta" />-->
 			</xpath>
         	</field>
     	</record> 

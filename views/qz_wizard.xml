@@ -1,0 +1,55 @@
+<odoo>
+    <record id="view_qz_print_template" model="ir.ui.view">
+        <field name="name">qz.print.wizard</field>
+        <field name="model">qz.print.wizard</field>
+        <field name="arch" type="xml">
+            <form string="QZ Print Wizard">
+                <sheet>
+                    <group>
+                        <div class="container" name="qz-print-div">
+                            <br />
+                            <div class="row" style="display: none;">
+                                <!-- Renderiza el campo zpl_code directamente desde el modelo -->
+                                <span id="zpl_code" name="zpl_code" t-esc="zpl_code"></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label class="form-label" for="copiesNumber">Copies</label>
+                                        <!-- Renderiza el campo copies_number desde el modelo -->
+                                        <input type="number" id="copiesNumber"
+                                               t-att-value="copies_number" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label class="form-label" for="printerName">Printer Name</label>
+                                        <!-- Renderiza el campo printer_name desde el modelo -->
+                                        <input type="text" id="printerName"
+                                               t-att-value="printer_name" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-success btn-lg"
+                                            id="btn-qz-print">Print</button>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-danger btn-lg"
+                                            id="btn-qz-close">Close</button>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
