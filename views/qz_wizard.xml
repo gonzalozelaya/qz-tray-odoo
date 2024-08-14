@@ -10,25 +10,24 @@
                             <br />
                             <div class="row" style="display: none;">
                                 <!-- Renderiza el campo zpl_code directamente desde el modelo -->
-                                <span id="zpl_code" name="zpl_code" t-esc="zpl_code"></span>
+                                <span id="zpl_code" name="zpl_code"></span>
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
                                 <div class="col-md-4">
                                     <div class="form-group row">
-                                        <label class="form-label" for="copiesNumber">Copies</label>
+                                        <!--<label class="form-label" for="copiesNumber">Copies</label>-->
                                         <!-- Renderiza el campo copies_number desde el modelo -->
-                                        <input type="number" id="copiesNumber"
-                                               t-att-value="copies_number" class="form-control" />
+                                        <input type="number" id="copiesNumber" name="CopiesNumber" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-4">
                                     <div class="form-group row">
-                                        <label class="form-label" for="printerName">Printer Name</label>
+                                        <!--<label class="form-label" for="printerName">Printer Name</label>-->
                                         <!-- Renderiza el campo printer_name desde el modelo -->
-                                        <input type="text" id="printerName"
-                                               t-att-value="printer_name" class="form-control" />
+                                        <input type="text" id="printerName" name="printerName"
+                                                class="form-control" />
                                     </div>
                                 </div>
                             </div>
@@ -36,12 +35,12 @@
                             <div class="row">
                                 <div class="col-md-2"></div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-success btn-lg"
+                                    <button name="btn-qz-print" type="button" class="btn btn-success btn-lg"
                                             id="btn-qz-print">Print</button>
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-lg"
+                                    <button name="btn-qz-close" type="button" class="btn btn-danger btn-lg"
                                             id="btn-qz-close">Close</button>
                                 </div>
                                 <div class="col-md-2"></div>

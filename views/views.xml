@@ -70,6 +70,7 @@
 				<!--<button name="print_label" type="object" string="Imprimir etiqueta" />-->
 			</xpath>
         	</field>
-    	</record> 
+    </record>
+</odoo>
 
 </odoo>

@@ -24,7 +24,7 @@
                                         <div class="form-group row">
                                                   <label class="form-label" for="printerName">Printer Name</label>
                                                   <input type="text" id="printerName"
-                                                    value="ZDesigner" class="form-control" />
+                                                    value="ZDesigner ZD220-203dpi ZPL" class="form-control" />
                                         </div>
                                     </div>
                                 </div>

@@ -1,3 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_zpl_report,model.zpl.report,model_zpl_report,base.group_system,1,1,1,1
 access_zpl_report_line,model.zpl.report.line,model_zpl_report_line,base.group_system,1,1,1,1
+access_qz_print_wizard_user,qz.print.wizard.user,model_qz_print_wizard,base.group_user,1,0,0,0
+access_qz_print_wizard_manager,qz.print.wizard.manager,model_qz_print_wizard,base.group_system,1,1,1,1
+access_zpl_report_template,qz.zpl.report.template,model_zpl_report_template,base.group_user,1,1,1,1
